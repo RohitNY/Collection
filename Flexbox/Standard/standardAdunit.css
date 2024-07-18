@@ -1,0 +1,34 @@
+.standard {
+    display: block;
+    font-family:  "Neue Haas Grotesk Text Pro 55 Roman",sans-serif;
+    max-width: 885px;
+    max-height: 670px;
+    gap:1em;
+    -moz-box-shadow: 0 0 5px rgb(88, 83, 83);
+    -webkit-box-shadow: 0 0 5px rgb(75, 69, 69);
+    box-shadow: 0 0 5px rgb(65, 62, 62);
+    padding: 20px;
+}
+.standard > header {
+    font-size: 2em;
+    font-weight: bold;
+    color:blue;
+    margin-bottom: 0.5em;
+}
+.standard > .adunitContainer {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    /*gap: 10px;  */
+}
+.singleAdunit {
+    display: grid;
+    background: #eee;
+    
+    /* width: 240px;*/
+    height: 280px; 
+    padding: 10px;
+    -moz-box-shadow: 0 0 5px rgb(88, 83, 83);
+    -webkit-box-shadow: 0 0 5px rgb(75, 69, 69);
+    box-shadow: 0 0 5px rgb(65, 62, 62);
+}

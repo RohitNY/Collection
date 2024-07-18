@@ -1,0 +1,36 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 10px;
+}
+.adunit {
+    padding:10px;
+    background: steelblue;
+    color: #fff;
+    border:1px solid lightblue;
+    border-radius: 10px;
+    height:300px;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    align-items: center;
+}
+
+.adunit > img {
+    border:1px red;
+    align-self: center;
+    width: 100%;
+    height:200px;
+}
+
+.adunit > article {
+    text-align: center;
+}
+
+.adunit > button {
+    border:#f5c368;
+    color:#fff;
+    background: orange;
+    height:2.5rem;
+    border-radius: 5px;
+}

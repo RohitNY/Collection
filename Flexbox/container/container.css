@@ -1,0 +1,62 @@
+.container {
+    font-family:  "Roboto","Neue Haas Grotesk Text Pro 55 Roman",sans-serif;
+    /* min-height: 100vh; */
+    padding: 20px;
+    max-width:908px;
+    /* grid-template-rows: 1fr 5fr 1fr 1fr; */
+    
+}
+.container > .sub-container {
+    border:2px solid blue;
+    display: grid;
+    gap: 1em;
+}
+
+.sub-container > header {
+    background: #ddd;
+    padding: 10px;
+}
+
+.sub-container > header > aside {
+    color: rgb(33, 35, 144);
+}
+
+.sub-container > header > img {
+    width: 1fr;
+    height: 1fr;
+}
+
+.sub-container > main {
+    background: #eee;
+    padding: 10px;
+}
+
+.sub-container > aside {
+    background: #ddd;
+    padding: 10px;
+}
+.sub-container > aside > .monetizeBottom {
+    background: rgb(230, 161, 161);
+    height: 335px;
+}
+
+.sub-container > footer {
+    background: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container > footer > button {
+    background: orange;
+    color: #fff;
+    border:1px solid rgb(116, 111, 111);
+    border-radius: 40px;
+    height:46px;
+    max-width: 50%;
+    font-size: 1.5em;
+    /* padding:5px; */
+    box-sizing: content-box;
+    min-width: 250px;
+}

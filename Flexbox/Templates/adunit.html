@@ -1,0 +1,13 @@
+<script type="text/template" id="standardAdunitTemplate">
+  <div class="standardAdunit">
+      <img src="{{= product.image_url}}" alt="product image">
+      <article>
+          <header>{{= product.name}}</header>
+          <sub>{{= product.merchants[0].merchant}}</sub>
+          <aside>{{= product.merchants[0].merchant_list_price}}</aside>
+      </article>
+      <footer>
+          <button onclick="navigateToAffiliateProduct({{= product}})">CTA BUTTON</button>
+      </footer>
+  </div>
+</script>

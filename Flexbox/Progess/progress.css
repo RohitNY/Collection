@@ -1,0 +1,55 @@
+.report {
+    display: grid;
+    font-family:  "Neue Haas Grotesk Text Pro 55 Roman",sans-serif;
+    gap: 1em;
+}
+
+.report > div {
+    padding:10px;
+    /*background:#eee;*/
+    display: grid;
+    grid-template-areas: 
+    'title status'
+    'title sub';
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.complete {
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,195,1) 48%, rgba(0,212,255,1) 100%);
+}
+
+.inProgress {
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,108,49,1) 48%, rgba(30,255,0,1) 100%);
+}
+
+.notStarted {
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(132,18,47,1) 48%, rgba(255,0,43,1) 100%);
+}
+
+/* .report > div:nth-child(odd) {
+    background: #ddd;
+} */
+.report > div > span {
+    grid-area: title;
+}
+.report > div > aside {
+    color:#000;
+    grid-area: status;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+.report > div > sub {
+    color:rgb(46, 36, 36);
+    grid-area: sub;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+}

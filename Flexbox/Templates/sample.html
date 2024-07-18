@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="adunit2.css" />
+    <link rel="stylesheet" href="affiliateGroup2.css" />
+    <link rel="stylesheet" href="editorialAdunit.css" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="extensions.js"></script>
+    <script src="package.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="productContainer"></div>
+    <script type="type/template" id="affiliateGroupTemplate">
+      <div class="affiliate-group group-container">
+        <header>{{= title}}</header>
+        <div class="products-container"></div>
+      </div>
+    </script>
+    <script type="type/template" id="editorialGroupTemplate">
+      <div class="editorial-group group-container">
+        <div class="products-container"></div>
+      </div>
+    </script>
+    <script type="text/template" id="standardAdunitTemplate">
+      <div class="standard-unit">
+          <img src="{{= imageUrl}}" alt="product image">
+          <article>
+              <header>{{= name}}</header>
+              <sub>{{= merchant}}</sub>
+              <aside>{{= formatAsCurrency(price)}}</aside>
+          </article>
+          <footer>
+              <button onclick="navigateToAffiliateProduct(event, '{{= productUrl}}', '{{= name}}', '{{= merchant}}')">SHOP NOW</button>
+          </footer>
+      </div>
+    </script>
+
+    <script type="text/template" id="editorialAdunitTemplate">
+      <div class="editorial-container">
+          <div class="image-container">
+              <img src="{{= imageUrl}}" alt="product image">
+          </div>
+          <aside>
+              <header>{{= name}}</header>
+              <sub>{{= merchant}}</sub>
+              <article>{{= description}}</article>
+          </aside>
+          <footer>
+              <button onclick="navigateToAffiliateProduct(event, '{{= productUrl}}', '{{= name}}', '{{= merchant}}')">SHOP NOW</button>
+          </footer>
+      </div>
+    </script>
+  </body>
+</html>

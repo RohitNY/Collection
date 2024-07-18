@@ -1,0 +1,63 @@
+.standardAdunit {
+  display: grid;
+  font-family: "Neue Haas Grotesk Text Pro 55 Roman", sans-serif;
+  /* background: #eee; */
+  /* max-width: 260px; */
+  height: 300px;
+  -moz-box-shadow: 0 0 5px rgb(158, 152, 152);
+  -webkit-box-shadow: 0 0 5px rgb(158, 152, 152);
+  box-shadow: 0 0 5px rgb(158, 152, 152);
+  grid-template-rows: 2fr 1.5fr 1fr;
+}
+
+.standardAdunit > img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 260px; */
+  max-height: 130px;
+  background: #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.standardAdunit > article {
+  /* background: #eee; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.standardAdunit > article > header {
+  color: rgb(12, 153, 247);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.standardAdunit > article > sub {
+  color: rgb(1, 1, 161);
+  font-weight: bold;
+}
+
+.standardAdunit > article > aside {
+  color: rgb(78, 77, 77);
+  
+}
+
+/* .standardAdunit > footer {
+    background: #ddd;
+} */
+
+.standardAdunit > footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standardAdunit > footer > button {
+  background: orange;
+  color: #fff;
+  border: 1px solid rgb(116, 111, 111);
+  border-radius: 40px;
+  height: 40px;
+  width: 90%;
+  font-size: 1em;
+}
